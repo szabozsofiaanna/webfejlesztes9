@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.3;
+    text-align: justify;
+    color: black;
+    background-color: #f0f4f4;
+}
+.oldal {
+    margin: 30px 25px;
+}
+
+/* Fejléc*/
+header {
+    background-color: #082d40;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+header .logo {
+    width: 40px;
+    height: auto;
+    border-radius:50%;
+}
+
+header .cegnev {
+    font-size: 22px;
+    margin-top: 10px;
+    font-family: "Julius Sans One"
+}
+
+
+nav.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    display:flex;
+    flex-direction:column;/*kozepre igazitas*/
+}
+
+nav ul li{
+    margin:1%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    background-color: #082d40;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+#current{
+    font-weight: bold;
+    color:white;
+    background-color:#436f82;
+}
+
+
+
+/* Konténer a fő tartalomhoz */
+.container {
+    max-width: 100%;
+    margin: 0;
+    padding:0;
+}
+
+/* Kezdőoldal*/
+.kezdooldal h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.kezdooldal p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: rgb(76, 76, 76);
+}
+.fotoalbumcim{
+    margin:80px 0 0 0;
+}
+.velemenycim{
+    margin:120px 0 0 0;
+}
+
+/* Vélemények*/
+.velemenyek {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.velemeny {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.velemenykep {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.velemenyp {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Állatok listája */
+.allatok {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top:50px;
+}
+
+.allat {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.shortp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+    align-items: center;
+
+}
+
+.bal, .jobb {
+    flex-basis: 48%;
+}
+
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.longp {
+    padding: 10px;
+    text-align: justify;
+    margin-top: 1px;
+}
+
+.allat img.animalimage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15%;
+}
+
+
+/* Gomb stílus */
+a.orokbefogadasgomb {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #082d40;
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+a.orokbefogadasgomb:active {
+    transform: translateY(1px); 
+}
+
+/*KI A LELKI TÁRSAD KVÍZ*/
+.quiz-container {
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container h1 {
+    font-size: 2rem;
+    color: #082d40;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 25px;
+}
+
+.question p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.question label {
+    font-size: 1rem;
+    color: #555;
+    display: block;
+    padding: 10px;
+    margin:0;
+}
+
+.quizbutton {
+    background-color: #082d40;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.quizbutton:hover {
+    background-color: #436f82;
+}
+
+#result {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/*TUDNIVALOK*/
+.intro {
+    background-color: #082d40;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top:50px;
+}
+
+.introcim {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.szeretet{
+    width:100%;
+    height:auto;
+}
+
+.tudnivalo {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tudnivalo h2.knowtitle {
+    font-size: 1.5rem;
+    color: #082d40;
+    margin-bottom: 10px;
+}
+
+.tudnivalo ul {
+    list-style: none;
+    padding-left: 20px; /* Kicsit beljebb toljuk a listát */
+    margin-top:8px;
+}
+
+.tudnivalo ul li {
+    position: relative; /* A pozicionálás segít a listajelölő elhelyezésében */
+    margin-bottom: 8px;
+    font-size: 1rem; /* Alap betűméret */
+    padding-left: 25px; /* Még több helyet adunk bal oldalon, hogy legyen hely a körnek */
+}
+
+/* Listajelölő - kör alakú, rózsaszín kitöltéssel */
+.tudnivalo ul li::before {
+    content: ''; /* A tartalom üres, mivel csak egy vizuális elemről van szó */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Középre igazítjuk a listajelölőt */
+    width: 10px; /* Kisebb kör méret */
+    height: 10px; /* Kisebb kör méret */
+    border-radius: 50%; /* Kerek alak */
+    background-color: #ff66b2; /* Rózsaszín szín */
+}
+
+/*ŰRLAP*/
+h2.info{
+    margin:20px 0 5px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="datetime-local"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #082d40;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #436f82;
+}
+
+label.error {
+    color: #fb3a3a;
+    }
+
+/* Footer*/
+footer {
+    background-color: #082d40;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+    margin-top:20px;
+}
+
+/* Media Queries*/
+@media (min-width: 600px) {
+    nav.menu ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    header .logo {
+        width: 50px;
+    }
+
+    header .cegnev {
+        font-size: 28px;
+    }
+
+    .kezdooldal h2 {
+        font-size: 24px;
+    }
+
+    .kezdooldal p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    header .logo {
+        width: 60px;
+    }
+
+    header .cegnev {
+        font-size: 36px;
+    }
+    .container {
+        padding: 0 4rem;
+    }
+
+    .menu ul li a {
+        font-size: 1.2rem;
+    }
+    .velemenyek {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .velemeny {
+        padding: 20px;
+    }
+
+    .velemenykep {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .form-actions input[type="submit"], .form-actions input[type="reset"] {
+        width: 48%;
+    }
+}
+
+@media (min-width: 900px) {
+    .allatok {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .allat {
+        width: 48%;
+    }
+}
+
